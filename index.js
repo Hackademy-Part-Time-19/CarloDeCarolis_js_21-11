@@ -127,10 +127,10 @@ output: true*/
 
 function palindroma(str) {
     // Rimuovere spazi e segni di punteggiatura dalla stringa
-    const cleanedStr = str.replace(/\W/g, "").toLowerCase();
+    let cleanedStr = str.replace(/\W/g, "").toLowerCase();
 
     // Invertire la stringa pulita e confrontarla con l'originale
-    const reversedStr = cleanedStr.split("").reverse().join("");
+    let reversedStr = cleanedStr.split("").reverse().join("");
 
     // Verificare se la stringa pulita è uguale alla sua inversione
     return cleanedStr === reversedStr;
